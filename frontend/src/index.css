@@ -1,0 +1,77 @@
+/* index.css */
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Basic reset to normalize styles across browsers */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* Or your preferred font */
+  background-color: #f0f0f0;
+  /* Example background color */
+}
+
+/* Basic styling for headings */
+h1,
+h2 {
+  color: #333;
+}
+
+/* Basic styling for lists */
+ul {
+  list-style-type: none;
+  /* Remove bullet points */
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  /* Add some spacing between list items */
+  cursor: pointer;
+}
+
+/* Basic styling for buttons */
+button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  /* Example blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+/* Input Styles */
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  resize: vertical;
+  /* Allow vertical resizing */
+}
+
+/* Basic styles for the flow names */
+span {
+  font-weight: bold;
+}

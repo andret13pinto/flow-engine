@@ -1,0 +1,13 @@
+{
+  "Name": "ImportedFlow",
+  "Nodes": [
+    {
+      "Type": "Read from Google Docs",
+      "Config": "config.json"
+    },
+    {
+      "Type": "Prompt LLM",
+      "Config": "Hello"
+    }
+  ]
+}

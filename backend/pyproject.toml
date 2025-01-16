@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "noxus-project"
+version = "0.1.0"
+description = ""
+authors = ["andret13pinto <andret13pinto@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.6"
+pydantic = "^2.10.5"
+uvicorn = "^0.34.0"
+google-api-python-client = "^2.158.0"
+google-auth-httplib2 = "^0.2.0"
+google-auth-oauthlib = "^1.2.1"
+openai = "^1.59.7"
+langchain = "^0.3.14"
+langchain-community = "^0.3.14"
+sqlalchemy = "^2.0.37"
+psycopg2-binary = "^2.9.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests/"]
+pythonpath = ["src"]  # Add 'src' to the PYTHONPATH
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.1"
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

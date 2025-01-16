@@ -1,0 +1,21 @@
+{
+  "Name": "RealImportedFlow",
+  "Nodes": [
+    {
+      "Type": "Read from Google Docs",
+      "Config": "Example"
+    },
+    {
+      "Type": "Prompt LLM",
+      "Config": "Repeat the text and add a joke."
+    },
+    {
+      "Type": "Prompt LLM",
+      "Config": "Answer the joke."
+    },
+    {
+      "Type": "Write to Google Docs",
+      "Config": "final_result"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-dotenv": "^0.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^9.18.0"
+  }
+}
