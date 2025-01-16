@@ -80,13 +80,41 @@ When users click the edit flow button, they are redirected to a dedicated edit p
   - API integrations
   - Custom script execution
 
+Here’s the formatted section to maintain consistency with the rest of the document:
+
+---
+
 ## Orchestration 🎮
 
-To run the project:
+To run the project, follow these steps:
 
-```bash
-# Start the application using Docker Compose
-docker compose up -d
-```
+1. **Start the application using Docker Compose**
+   Run the following command in your terminal:
 
-##
+   ```bash
+   docker compose up -d
+   ```
+
+   Once the application is running, navigate to **localhost:8000**, where the UI is exposed.
+
+2. **Enable Google Authentication (Optional)**
+   To enable Google authentication, you need to generate your token before running the project. Follow these steps:
+
+   - Navigate to the backend source directory:
+     ```bash
+     cd backend/src
+     ```
+   - Create a local virtual environment using Poetry:
+     ```bash
+     poetry install
+     ```
+   - Activate the virtual environment:
+     ```bash
+     poetry shell
+     ```
+   - Generate the Google authentication token:
+     ```bash
+     python google_auth/generate_token.py
+     ```
+   - Follow the prompts to allow permissions for accessing Google Drive and Google Docs.
+   - Once permissions are granted, a `token.json` file will be created under the `google_auth` folder.
