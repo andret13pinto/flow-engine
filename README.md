@@ -95,7 +95,7 @@ To run the project, follow these steps:
    docker compose up -d
    ```
 
-   Once the application is running, navigate to **localhost:8000**, where the UI is exposed.
+   Once the application is running, navigate to **localhost:3000**, where the UI is exposed.
 
 2. **Enable Google Authentication (Optional)**
    To enable Google authentication, you need to generate your token before running the project. Follow these steps:
